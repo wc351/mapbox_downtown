@@ -13,13 +13,13 @@
   "format": "png",
   "interactivity": {
     "layer": "downtownbuildings",
-    "template_teaser": "<p>{{{CurBusines}}}</p>\n<p>{{{address}}}</p>\n<p>Current Use: {{{CurrentUse}}}</p>\n<p>{{{Build_Area}}} sq.ft.</p>",
+    "template_teaser": "<p>{{{CurBusines}}}</p>\n<p>{{{address}}}</p>\n<p>Current Use: {{{CurrentUse}}}</p>\n<p>{{{Build_Area}}} square feet</p>\n<p>Click to see Street View</p>",
     "template_location": "{{{sview}}}",
     "fields": [
+      "CurBusines",
       "address",
+      "CurrentUse",
       "Build_Area",
-      "Current_bu",
-      "Current_Us",
       "sview"
     ]
   },
@@ -41,10 +41,7 @@
       "id": "downtownbuildings",
       "class": "",
       "Datasource": {
-        "file": "downtown_buldings.shp",
-        "id": "downtownbuildings",
-        "project": "Gainesville",
-        "srs": ""
+        "file": "downtown_buldings.shp"
       },
       "srs-name": "autodetect",
       "srs": "",
@@ -56,6 +53,6 @@
   "metatile": 2,
   "name": "Gainesville Downtown",
   "description": "",
-  "legend": "<div class='my-legend'>\n<div class='legend-title'>Legend</div>\n<div class='legend-scale'>\n  <ul class='legend-labels'>\n    <li><span style='background:#85c5d3;'></span>Vacant</li>\n    <li><span style='background:#a9ed87;'></span>Occupied</li>\n  </ul>\n</div>\n<div class='legend-source'>Contact: <a href=\"#link to source\">mainstreet@gainesville.org</a></div>\n</div>\n\n<style type='text/css'>\n  .my-legend .legend-title {\n    text-align: left;\n    margin-bottom: 5px;\n    font-weight: bold;\n    font-size: 90%;\n    }\n  .my-legend .legend-scale ul {\n    margin: 0;\n    margin-bottom: 5px;\n    padding: 0;\n    float: left;\n    list-style: none;\n    }\n  .my-legend .legend-scale ul li {\n    font-size: 80%;\n    list-style: none;\n    margin-left: 0;\n    line-height: 18px;\n    margin-bottom: 2px;\n    }\n  .my-legend ul.legend-labels li span {\n    display: block;\n    float: left;\n    height: 16px;\n    width: 30px;\n    margin-right: 5px;\n    margin-left: 0;\n    border: 1px solid #999;\n    }\n  .my-legend .legend-source {\n    font-size: 70%;\n    color: #999;\n    clear: both;\n    }\n  .my-legend a {\n    color: #777;\n    }\n</style>",
+  "legend": "<div class='my-legend'>\n<div class='legend-title'>Legend</div>\n<div class=\"container\">\n<div class='legend-scale'>\n  <ul class='legend-labels'>\n    <li><span style='background:#85c5d3;'></span>Vacant</li>\n    <li><span style='background:#a9ed87;'></span>Occupied</li>\n  </ul>\n</div>\n</div>\n\n<div class='legend-source' href=\"mailto:mainstreet@gainesville.org\">mainstreet@gainesville.org</div>\n<div class='legend-source'>678-555-5555</div>\n</div>\n\n\n<style type='text/css'>\n  .my-legend .legend-title {\n    text-align: center;\n    margin-bottom: 5px;\n    font-weight: bold;\n    font-size: 140%;\n    }\n  .my-legend .legend-scale ul {\n    margin: 0;\n    margin-bottom: 5px;\n    padding: 0;\n    float: left;\n    list-style: none;\n    }\n  .my-legend .legend-scale ul li {\n    font-size: 130%;\n    list-style: none;\n    margin-left: 0;\n    line-height: 18px;\n    margin-bottom: 2px;\n    }\n  .my-legend ul.legend-labels li span {\n    display: block;\n    float: left;\n    height: 16px;\n    width: 30px;\n    margin-right: 5px;\n    margin-left: 0;\n    border: 1px solid #999;\n    }\n  .my-legend .legend-source {\n    text-align: center;\n    font-size: 120%;\n    color: black;\n    }\n  .my-legend a {\n    color: #777;\n    }\n</style>",
   "attribution": ""
 }
